@@ -60,7 +60,7 @@ export default function Login({navigation}) {
             </TouchableOpacity>
             
             <TouchableOpacity onPress={() => navigation.navigate("RedefSenha")}>
-            <Text>Redefinir senha</Text>
+            <Text>Esqueceu a senha?</Text>
             </TouchableOpacity>
         </View>
     )

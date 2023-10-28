@@ -5,8 +5,8 @@ import { TouchableOpacity, Text, StyleSheet } from 'react-native';
 export const pontuacao = (score, setScore, opcoesSelecionadas, setPonto, vida,  setVida)=>{    
     const palavraResposta = opcoesSelecionadas.join(' ')
     if (palavraResposta === "qual o seu nome?") {
-         setScore(score + 0.1);
-         setPonto('Correto')
+            setScore(score + 0.1);
+            setPonto('Correto')
     } else {
         setPonto('Errado')
         setVida(vida - 1)
@@ -19,11 +19,11 @@ export const cameraLenta = (vel,  setcor, setVel)=>{
         // se for igual a 1, define a nova velocidade para 0.5 e a cor para "red"
         setVel(0.5);
         setcor("red");
-      } else {
+        } else {
         // se não, define a nova velocidade para 1 e a cor para "blue"
         setVel(1);
         setcor("blue");
-      }
+        }
 }
 
 /*Função que fara a coleta de palavras em embaralhar a sua ordem em um Array

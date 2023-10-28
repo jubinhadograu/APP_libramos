@@ -3,7 +3,7 @@ import { initializeApp } from "firebase/app";
 import { getReactNativePersistence, initializeAuth } from "firebase/auth";
 import { getFirestore } from 'firebase/firestore';
 
-/*import {
+import {
     API_KEY,
     AUTH_DOMAIN,
     DATABASE_URL,
@@ -23,16 +23,6 @@ const firebaseConfig = {
     messagingSenderId: MESSAGING_SENDER_ID,
     appId: APP_ID,
     measurementId: MEASUREMENT_ID,
-};*/
-
-const firebaseConfig = {
-    apiKey: "AIzaSyBp1FkFOfNFmKs2x4pOg33sqkthwJ-RYas",
-    authDomain: "libramos-teste.firebaseapp.com",
-    projectId: "libramos-teste",
-    storageBucket: "libramos-teste.appspot.com",
-    messagingSenderId: "647027211396",
-    appId: "1:647027211396:web:2d817b62b288ec79e256d1",
-    measurementId: "G-4QEMS2YHEK"
 };
 
 const app = initializeApp(firebaseConfig);

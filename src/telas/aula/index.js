@@ -34,14 +34,14 @@ export default function Aula ({navigation}){
     */
     useEffect(() => {
         setOpcoes(palavras(palavraCorreta));
-      }, []);
+    }, []);
 
-      useEffect(() => {
+    useEffect(() => {
         // Chame a função PegarFrequencia quando necessário
         if (vida >= 0 && Math.abs(score - 1) < 0.0001) {
-          PegarFrequencia(usuario, 2);
+        PegarFrequencia(usuario, 2);
         }
-      }, [vida, score, usuario]);
+    }, [vida, score, usuario]);
 
     return <>
     <View style={style.topo}>
@@ -53,10 +53,10 @@ export default function Aula ({navigation}){
                 <TouchableOpacity onPress={() => navigation.navigate('Modulos')}>
                     <Text style={{fontSize:40, color: 'white'}}>{"<-"}</Text>
                 </TouchableOpacity>
-             <Progress.Bar progress={score} width={300} height={20}/>
-             <Text style={{backgroundColor: 'pink', fontSize: 20}}>{vida}</Text>
+            <Progress.Bar progress={score} width={300} height={20}/>
+            <Text style={{backgroundColor: 'pink', fontSize: 20}}>{vida}</Text>
             </View>
-      <Text>O que significa esse sinal?</Text>
+            <Text>O que significa esse sinal?</Text>
             {/* função de video */}
             <Video
                 ref={video}
@@ -80,7 +80,7 @@ export default function Aula ({navigation}){
                 </View>
 
 
-            {/*campo onde fica o testo que o usuario clicou*/}
+                {/*campo onde fica o texto que o usuario clicou*/}
                 <View style={style.selecaoOpcao}>
                     <Text>{opcoesSelecionadas.join(' ')}</Text>
                 </View>
